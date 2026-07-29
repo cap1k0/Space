@@ -9,7 +9,7 @@ export default function TermsPage() {
         </Link>
 
         <h1 className="mb-2 text-3xl font-medium">Terms of service</h1>
-        <p className="mb-10 text-sm text-neutral-500">Last updated: [date]</p>
+        <p className="mb-10 text-sm text-neutral-500">Last updated: </p>
 
         <div className="space-y-8 text-sm leading-relaxed text-neutral-700">
           <p>
@@ -181,9 +181,8 @@ export default function TermsPage() {
           </Section>
 
           <p className="border-t border-neutral-200 pt-6 text-xs text-neutral-400">
-            This is a general template and not legal advice. Have it
-            reviewed by a lawyer familiar with your jurisdiction and
-            business before publishing.
+           Harwey! general template 
+            
           </p>
         </div>
       </div>
