@@ -11,7 +11,7 @@ export default function Home() {
           <div className="flex gap-6 text-sm text-neutral-500">
             <Link href="#product">Product</Link>
             <Link href="#research">Research</Link>
-            <Link href="#docs">Docs</Link>
+            <Link href="/docs">Docs</Link>
           </div>
         </nav>
 
