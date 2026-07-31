@@ -100,7 +100,7 @@ export default function Home() {
 
         {/* Footer */}
         <footer className="flex items-center justify-between border-t border-neutral-200 pt-4 text-sm text-neutral-500">
-          <span>© 2026 Bruca</span>
+          <span>© 2026</span>
           <Link href="/terms" className="hover:text-neutral-800">
             Terms of service
           </Link>
