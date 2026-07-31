@@ -16,9 +16,9 @@ const categories: Category[] = [
     name: "Getting started",
     articles: [
       {
-        title: "How Bruca edits",
-        slug: "how-bruca-edits",
-        description: "What the editing agent changes, and what it leaves alone.",
+        title: "Bruca Research: AI vs Human Language Editing",
+        slug: "bruca-ai-vs-human-editing",
+        description: "A research experiment comparing AI-generated edits with human linguistic corrections using NLP evaluation methods."
       },
     ],
   },
