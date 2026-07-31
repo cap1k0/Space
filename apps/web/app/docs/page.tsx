@@ -17,7 +17,7 @@ const categories: Category[] = [
     articles: [
       {
         title: "Bruca Research: AI vs Human Language Editing",
-        slug: "bruca-ai-vs-human-editing",
+        slug: "how-bruca-edits",
         description:
           "A research experiment comparing AI-generated edits with human linguistic corrections using NLP evaluation methods.",
       },
