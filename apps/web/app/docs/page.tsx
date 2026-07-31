@@ -18,7 +18,8 @@ const categories: Category[] = [
       {
         title: "Bruca Research: AI vs Human Language Editing",
         slug: "bruca-ai-vs-human-editing",
-        description: "A research experiment comparing AI-generated edits with human linguistic corrections using NLP evaluation methods."
+        description:
+          "A research experiment comparing AI-generated edits with human linguistic corrections using NLP evaluation methods.",
       },
     ],
   },
@@ -36,7 +37,10 @@ export default function DocsPage() {
   return (
     <main className="min-h-screen bg-white text-neutral-900">
       <div className="mx-auto max-w-4xl px-6 py-12">
-        <Link href="/" className="mb-8 inline-block text-sm text-neutral-500 hover:text-neutral-800">
+        <Link
+          href="/"
+          className="mb-8 inline-block text-sm text-neutral-500 hover:text-neutral-800"
+        >
           ← Back to Bruca
         </Link>
 
@@ -50,17 +54,24 @@ export default function DocsPage() {
               </h2>
 
               {category.articles.length === 0 ? (
-                <p className="text-sm text-neutral-400">Nothing here yet.</p>
+                <p className="text-sm text-neutral-400">
+                  Nothing here yet.
+                </p>
               ) : (
                 <div className="space-y-3">
                   {category.articles.map((article) => (
                     <Link
                       key={article.slug}
                       href={`/docs/${article.slug}`}
-                      className="block rounded-xl border border-neutral-200 p-5 hover:border-neutral-300"
+                      className="block rounded-xl border border-neutral-200 p-5 transition hover:border-neutral-300"
                     >
-                      <p className="mb-1 font-medium">{article.title}</p>
-                      <p className="text-sm text-neutral-600">{article.description}</p>
+                      <h3 className="mb-1 font-medium">
+                        {article.title}
+                      </h3>
+
+                      <p className="text-sm text-neutral-600">
+                        {article.description}
+                      </p>
                     </Link>
                   ))}
                 </div>
