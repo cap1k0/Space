@@ -1,4 +1,5 @@
 import Link from "next/link";
+import MetricsChart from "./MetricsChart";
 
 export default function HowBrucaEditsPage() {
   return (
@@ -229,50 +230,15 @@ distance <- stringdist(
 
           <section>
             <h2 className="mb-3 text-xl font-medium text-neutral-900">7. Results Visualization</h2>
-            <div className="space-y-2 text-sm text-neutral-500">
-              <p>[Insert R BLEU chart]</p>
-              <p>[Insert R chrF chart]</p>
-            </div>
-          </section>
-
-          <section>
-            <h2 className="mb-3 text-xl font-medium text-neutral-900">8. Experimental Data Representation</h2>
             <p className="mb-4">
-              The following JSON structure is used for platform
-              visualization:
+              Comparing human normalization against the AI-generated output
+              across the three metrics:
             </p>
-            <pre className="overflow-x-auto rounded-lg bg-neutral-900 p-4 text-sm text-neutral-100">
-{`{
-  "project": {
-    "title": "AI vs Human Historical French Normalization",
-    "model": "Qwen2.5-14B-Instruct",
-    "task": "Historical text normalization",
-    "reference": "Human linguistic editing"
-  },
-  "metrics": [
-    { "name": "BLEU", "human": 1.0, "ai": 0.78 },
-    { "name": "chrF", "human": 1.0, "ai": 0.84 },
-    { "name": "WER", "human": 0.0, "ai": 0.22 }
-  ],
-  "examples": [
-    {
-      "original": "Ledictz jour, vendredy 28 octobrix 1547, en l'Evesché",
-      "human": "Ledit jour vendredi 28 octobris 1547 en l'Évêché",
-      "ai": "Le dict jour, vendredi 28 octobre 1547, en l'Évêché"
-    }
-  ],
-  "future_work": [
-    "Collect larger expert annotated datasets",
-    "Fine-tune Qwen with LoRA",
-    "Add corpus linguistic analysis",
-    "Develop specialized AI editing model"
-  ]
-}`}
-            </pre>
+            <MetricsChart />
           </section>
 
           <section>
-            <h2 className="mb-3 text-xl font-medium text-neutral-900">9. Error Analysis</h2>
+            <h2 className="mb-3 text-xl font-medium text-neutral-900">8. Error Analysis</h2>
             <p className="mb-4">
               The preliminary evaluation shows several types of AI editing
               behavior.
@@ -315,7 +281,7 @@ distance <- stringdist(
           </section>
 
           <section>
-            <h2 className="mb-3 text-xl font-medium text-neutral-900">10. Future Development</h2>
+            <h2 className="mb-3 text-xl font-medium text-neutral-900">9. Future Development</h2>
             <p className="mb-4">
               This experiment represents the first baseline version of the
               system.
