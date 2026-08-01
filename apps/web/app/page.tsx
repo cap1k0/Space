@@ -31,7 +31,9 @@ export default function Home() {
           </p>
           <div className="flex flex-wrap gap-3">
             <a
-              href="#product"
+             
+             href="https://ai.bruca.space/"
+
               className="rounded-md border-2 border-blue-600 bg-blue-50 px-5 py-2.5 font-medium text-blue-800"
             >
               Try the editing agent →
