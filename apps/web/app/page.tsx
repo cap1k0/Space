@@ -133,7 +133,7 @@ export default function Home() {
               </p>
 
               <p className="font-medium">
-                در حال توسعه
+                WorkWellQ Model
               </p>
 
               <p className="mt-2 text-xs text-neutral-500">
@@ -148,7 +148,7 @@ export default function Home() {
               </p>
 
               <p className="font-medium">
-                در حال توسعه
+                DEI-Model
               </p>
 
               <p className="mt-2 text-xs text-neutral-500">
